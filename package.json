@@ -3,18 +3,17 @@
   "version": "0.7.0",
   "description": "Frontend part for random.icu - Free API for QA Engineers",
   "dependencies": {
-    "purecss": "^2.0.3"
+    "purecss": "^2.0.6"
   },
   "devDependencies": {
-    "cssnano": "^4.1.10",
-    "parcel-bundler": "^1.12.4"
+    "parcel": "^2.0.0-beta.3.1"
   },
   "scripts": {
-    "clean-parcel-cache": "rm -rf ./.cache",
+    "clean-parcel-cache": "rm -rf ./.parcel-cache",
     "clean-node-cache": "rm -rf ./node_modules",
     "clean": "npm run clean-node-cache && npm run clean-parcel-cache",
-    "dev": "parcel watch --out-dir ./target/classes/static ./src/main/resources/templates/index.html",
-    "build": "parcel build --no-source-maps --out-dir ./target/classes/static ./src/main/resources/templates/index.html",
+    "dev": "parcel watch --dist-dir ./target/classes/static ./src/main/resources/templates/index.html",
+    "build": "parcel build --no-source-maps --dist-dir ./target/classes/static ./src/main/resources/templates/index.html",
     "version": "standard-version --tag-prefix '' --sign"
   },
   "repository": {
