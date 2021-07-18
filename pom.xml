@@ -94,6 +94,9 @@
                 <artifactId>jib-maven-plugin</artifactId>
                 <version>3.1.2</version>
                 <configuration>
+                    <from>
+                        <image>adoptopenjdk:16-jre@sha256:acc99f88a18a9954da4f9605c715d907c41fe5648e270ed0f77c2a0459f55931</image>
+                    </from>
                     <to>
                         <image>docker.io/pythoninja/randomicu</image>
                         <tags>
@@ -103,23 +106,13 @@
                     </to>
                     <container>
                         <creationTime>USE_CURRENT_TIMESTAMP</creationTime>
-                        <jvmFlags>
-                            <jvmFlag>-server</jvmFlag>
-                            <jvmFlag>-XX:+UseContainerSupport</jvmFlag>
-                            <jvmFlag>-Xmx300m</jvmFlag>
-                            <jvmFlag>-Xss512k</jvmFlag>
-                            <jvmFlag>-XX:CICompilerCount=2</jvmFlag>
-                            <jvmFlag>-Dfile.encoding=UTF-8</jvmFlag>
-                        </jvmFlags>
                         <args>
                             <arg>$JAVA_OPTS</arg>
                             <arg>-server</arg>
-                            <arg>-XX:+UseContainerSupport</arg>
-                            <arg>-Xmx300m</arg>
-                            <arg>-Xss512k</arg>
-                            <arg>-XX:CICompilerCount=2</arg>
+                            <arg>-XX:CICompilerCount=4</arg>
                             <arg>-Dfile.encoding=UTF-8</arg>
                         </args>
+                        <mainClass>icu.random.Application</mainClass>
                     </container>
                 </configuration>
                 <executions>
