@@ -14,7 +14,7 @@ blocks:
       jobs:
         - name: Maven install and cache
           commands:
-            - sem-version java 11
+            - java -version
             - checkout
             - cache restore
             - 'mvn -q dependency:go-offline test-compile'
