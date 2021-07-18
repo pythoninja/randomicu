@@ -18,6 +18,9 @@
     <properties>
         <java.version>16</java.version>
         <version.number>${git.closest.tag.name}-local</version.number>
+        <sonar.projectKey>randomicu_randomicu</sonar.projectKey>
+        <sonar.organization>randomicu</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <dependencies>
