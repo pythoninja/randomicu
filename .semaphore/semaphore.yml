@@ -49,7 +49,7 @@ blocks:
           value: 'postgresql://postgres:postgres@localhost:5432/fakedata_test'
       prologue:
         commands:
-          - sem-version java 11
+          - sem-version java 16
           - sem-service start postgres 13 --username=postgres --password=password --db=fakedata_test
           - checkout
           - cache restore
