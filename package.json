@@ -1,7 +1,7 @@
 {
-  "name": "randomicu",
+  "name": "randomicu-frontend",
   "version": "0.7.0",
-  "description": "Frontend part for random.icu - Free API for QA Engineers",
+  "description": "Frontend part for random.icu - Free fake data generator for QA purposes",
   "dependencies": {
     "purecss": "^2.0.6"
   },
@@ -18,12 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pythoninja/randomicu.git"
+    "url": "git+https://github.com/randomicu/randomicu.git"
   },
   "author": "pythoninja",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pythoninja/randomicu/issues"
+    "url": "https://github.com/randomicu/randomicu/issues"
   },
   "homepage": "https://random.icu"
 }
